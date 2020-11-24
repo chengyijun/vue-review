@@ -61,6 +61,29 @@ const routes = [
             title: '练习：购物车'
         },
         component: () => import('./views/Trick7')
+    },
+    {
+        path: '/trick8',
+        children: [
+            {
+                path: 'news',
+                meta: {
+                    title: '新闻'
+                },
+                component: () => import('./components/News')
+            },
+            {
+                path: 'info',
+                meta: {
+                    title: '信息'
+                },
+                component: () => import('./components/Info')
+            }
+        ],
+        meta: {
+            title: 'keep-alive'
+        },
+        component: () => import('./views/Trick8')
     }
 ]
 
@@ -73,8 +96,9 @@ const router = new Router({
 
 // 使用全局路由导航守卫
 router.beforeEach((to, from, next) => {
-    console.log(to);
-    document.title = to.matched[0].meta.title
+    // console.log(to);
+    if (to.matched.length > 0)
+        document.title = to.matched[0].meta.title
     next()
 })
 

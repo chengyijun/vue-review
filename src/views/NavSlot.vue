@@ -15,7 +15,11 @@
             <hr>
             <router-link to="/trick7">练习：购物车</router-link>
             <hr>
-            <router-view></router-view>
+            <router-link to="/trick8">keep-alive</router-link>
+            <hr>
+            <keep-alive>
+                <router-view></router-view>
+            </keep-alive>
         </div>
     </div>
 </template>
