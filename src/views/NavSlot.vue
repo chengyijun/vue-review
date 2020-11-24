@@ -13,6 +13,8 @@
             <hr>
             <router-link to="/trick6">路由……导航守卫</router-link>
             <hr>
+            <router-link to="/trick7">练习：购物车</router-link>
+            <hr>
             <router-view></router-view>
         </div>
     </div>

@@ -54,6 +54,13 @@ const routes = [
             title: '路由 导航守卫'
         },
         component: () => import('./views/Trick6')
+    },
+    {
+        path: '/trick7',
+        meta: {
+            title: '练习：购物车'
+        },
+        component: () => import('./views/Trick7')
     }
 ]
 
