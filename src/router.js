@@ -84,6 +84,13 @@ const routes = [
             title: 'keep-alive'
         },
         component: () => import('./views/Trick8')
+    },
+    {
+        path: '/trick9',
+        meta: {
+            title: '轮播图'
+        },
+        component: () => import('./views/Trick9')
     }
 ]
 

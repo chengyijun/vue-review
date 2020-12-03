@@ -17,6 +17,8 @@
             <hr>
             <router-link to="/trick8">keep-alive</router-link>
             <hr>
+            <router-link to="/trick9">轮播图</router-link>
+            <hr>
             <keep-alive>
                 <router-view></router-view>
             </keep-alive>
